@@ -1,0 +1,185 @@
+db.getCollection('all_message').insertMany([{
+    "source":"Message",
+    "id":"E1",
+    "category":"Message",
+    "text":["<b>YOUR BASKET IS SAVED</b>",
+            "<q>I used to lose precious hours to my account and now I've got sage It takes care of everything-from payments to the invoicing</q>",
+            "Jen Walker",
+            "Founder, The Split Screen Coffee"],
+    "image":[{"url":"https://miro.medium.com/max/3960/1*wePl7h5pIOWFayxMTsGTxQ.jpeg"}],
+    "options":[
+                {"text":"Return to basket",
+                "display":"Return to basket",
+                "execute":{
+                    "proc":"",
+                    "next":{"true":"E1_1"}
+                    }
+                },
+                {"text":"Leave Feedback",
+                 "display":"Leave Feedback",
+                 "execute":{
+                     "proc":"",
+                     "next":{"true":"E1_2"
+           }}}]
+    },
+    {"source":"Message",
+     "id":"E2",
+     "category":"Message",
+     "text":["<h2>DON'T RUN OUT!</h2>",
+             "Save hours-our stationery works seamlessly with Sage software",
+             "Auto-aligins with Sage software",
+             "High quality, professional layout",
+             "100% recyclable"],
+     "image":[{"url":"https://i.udemycdn.com/course/750x422/889438_fd0d_4.jpg"}],
+     "options":[{"text":"Complete my Order",
+                 "display":"Complete my Order",
+                 "execute":{
+                     "proc":"",
+                     "next":{
+                         "true":"E2_1"}}
+                 },
+                 {"text":"No Thanks",
+                  "display":"No Thanks",
+                  "execute":{
+                      "proc":"",
+                      "next":{
+                          "true":"E2_2"
+                 }}}]
+     },
+      {"source":"Message",
+       "id":"E3",
+       "category":"Message",
+       "text":["<h2>DON'T RUN OUT</h2>",
+               "UK delievery within 3 days.",
+               "All stationery works seamlessly with Sage software, simply press print. In stock now."],
+       "image":[{"url":"https://miro.medium.com/max/2992/1*BWZp1CB1u7QE1CAr6eewrA.jpeg"}],
+       "options":[{"text":"Complete myorder",
+                   "display":"Complete my order",
+                   "execute":{
+                       "proc":"",
+                       "next":{
+                           "true":"E2_1"
+                           }
+                       }
+                   },
+                   {"text":"No thanks",
+                    "display":"No thanks",
+                    "execute":{
+                        "proc":"",
+                        "next":{
+                            "true":"E2_2"
+             }}}]
+     },
+    {
+        "source":"Message",
+        "id":"E4",
+        "category":"Message",
+        "text":[
+           "<h2>DON'T RUN OUT</h2>",
+           "Get the only envelopes 100% guaranteed to fit your plus-size payslip",
+           "Designed for all Sage payslips",
+           "Secure self-sealing",
+           "Clear window showing employee name"
+        ],
+        "image":[{"url":"https://i.udemycdn.com/course/750x422/857104_f021_4.jpg"}],
+        "options":[
+           {
+               "text":"Complete my order",
+               "display":"Complete my order",
+               "execute":{
+                   "proc":"",
+                   "next":{
+                       "true":"E2_1"
+           }}}]
+      },
+         {
+             "source":"Message",
+             "id":"E5",
+             "category":"Message",
+             "text":["<h2>DON'T RUN OUT</h2>",
+                     "With Sage Self Seal Mailers,you don't need envelopes or a sealing machine",
+                     "Auto-aligns with Sage Payroll",
+                     "Clear, high quality layout",
+                     "100% recyclable"],
+             "image":[{"url":"https://www.kunocreative.com/hubfs/Chatbot-evolution-1.png"}],
+             "options":[
+              {
+                  "text":"Complete my order",
+                  "display":"Complete my order",
+                  "execute":{
+                      "proc":"",
+                      "next":{
+                          "true":"E2_1"
+                          }
+                   }
+               },
+               {
+                   "text":"No thanks",
+                   "display":"No thanks",
+                   "execute":{
+                       "proc":"",
+                       "next":{
+                           "true":"E2_2"
+                }}}]
+       },
+       {
+           "source":"Message",
+           "id":"E6",
+           "category":"Message",
+           "text":["<h2>DON'T RUN OUT</h2>",
+                   "Get your HMRC approved p60 self-seal mailers today",
+                   "Updated for latest tax year",
+                   "Self-seal security envelope",
+                   "Fully compatible with Sage 50 cloud Payroll"],
+           "image":[{"url":"https://media.wired.com/photos/5a540c008652c3185cff9b4e/master/w_2560%2Cc_limit/Chatbot-TopArt-879128144.jpg"}],
+           "options":[
+           {
+             "text":"Complete my order",
+             "display":"Complete my order",
+             "execute":{
+                 "proc":"",
+                 "next":{
+                     "true":"E2_1"
+                     }
+                 }
+             },
+             {
+                 "text":"No thanks",
+                 "display":"No thanks",
+                 "execute":{
+                     "proc":"",
+                     "next":{
+                         "true":"E2_2"
+           }}}]
+      },
+      {
+          "source":"Message",
+          "id":"E7",
+          "category":"Message",
+          "text":["<h2>DON'T RUN OUT</h2>",
+                  "Get professional looking, branded payslips today",
+                  "Auto-aligns with Sage Payroll",
+                  "100% recyclable",
+                  "Low-carbon footprint from UK sources"],
+          "image":[{"url":"https://www.impactbnd.com/hubfs/marketing-chatbot-examples.jpg"}],
+          "options":[
+            {
+                "text":"Complete my order",
+                "display":"Complete my order",
+                "execute":{
+                    "proc":"",
+                    "next":{
+                        "true":"E2_1"
+                        }
+                    }
+            },
+            {
+                "text":"No thanks",
+                "display":"No thanks",
+                "execute":{
+                    "proc":"",
+                    "next":{
+                        "true":"E2_2"
+        }}}]
+    }
+ ]);
